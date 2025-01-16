@@ -26,7 +26,7 @@ end
 module type V_DST = sig
   type t
   type vertex
-  val empty : unit -> t
+  val empty : t
   val add_vertex : t -> vertex -> t
 end
 
@@ -68,7 +68,7 @@ end
 module type E_DST = sig
   type t
   type edge
-  val empty : unit -> t
+  val empty : t
   val add_edge_e : t -> edge -> t
 end
 
